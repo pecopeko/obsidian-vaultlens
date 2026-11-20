@@ -1,0 +1,38 @@
+{
+  "name": "obsidian-vaultlens",
+  "version": "1.0.0",
+  "description": "VaultLens AI Context & PII Shield — zero-dependency Obsidian plugin for live wikilink token metering, reversible PII/secret redaction, and offline vault RAG audits.",
+  "main": "main.js",
+  "license": "MIT",
+  "author": "pecopeko",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pecopeko/obsidian-vaultlens.git"
+  },
+  "homepage": "https://github.com/pecopeko/obsidian-vaultlens#readme",
+  "bugs": {
+    "url": "https://github.com/pecopeko/obsidian-vaultlens/issues"
+  },
+  "keywords": [
+    "obsidian",
+    "obsidian-plugin",
+    "ai-context",
+    "privacy",
+    "pii-redaction",
+    "token-counter",
+    "pkm",
+    "markdown",
+    "rag"
+  ],
+  "scripts": {
+    "build": "node scripts/build_bundle.mjs",
+    "test": "node --test test/vaultlens.test.mjs",
+    "verify": "npm run build && npm test",
+    "keygen": "node tools/keygen.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

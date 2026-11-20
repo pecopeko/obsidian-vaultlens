@@ -1,0 +1,153 @@
+/* VaultLens AI Context & PII Shield — Scoped Obsidian Plugin Styles */
+
+.vaultlens-status-bar {
+  cursor: pointer;
+  font-variant-numeric: tabular-nums;
+  padding: 0 6px;
+  border-radius: 4px;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.vaultlens-status-bar:hover {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.vaultlens-status-alert {
+  color: var(--text-warning);
+  font-weight: 600;
+}
+
+.vaultlens-modal {
+  max-width: 680px;
+}
+
+.vaultlens-subtitle {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  margin-top: -4px;
+  margin-bottom: 14px;
+}
+
+.vaultlens-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.vaultlens-stat-card {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.vaultlens-stat-label {
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.vaultlens-stat-value {
+  font-size: var(--font-ui-medium);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.vaultlens-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-ui-small);
+  margin-bottom: 16px;
+}
+
+.vaultlens-table th,
+.vaultlens-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+
+.vaultlens-table th {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.vaultlens-row-active {
+  background-color: var(--background-secondary);
+  font-weight: 600;
+}
+
+.vaultlens-list {
+  margin: 6px 0 14px 18px;
+  padding: 0;
+  font-size: var(--font-ui-small);
+}
+
+.vaultlens-findings-list li {
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+  color: var(--text-warning);
+}
+
+.vaultlens-textarea {
+  width: 100%;
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-small);
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.vaultlens-settings-textarea {
+  width: 260px;
+  min-height: 84px;
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+}
+
+.vaultlens-status-pill {
+  display: inline-block;
+  font-size: var(--font-ui-smaller);
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.vaultlens-warning-text {
+  color: var(--text-error);
+  font-size: var(--font-ui-small);
+  font-weight: 500;
+}
+
+.vaultlens-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.vaultlens-link-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  text-decoration: none;
+  font-size: var(--font-ui-small);
+  color: var(--text-normal);
+  background: var(--background-secondary);
+}
+
+.vaultlens-link-btn:hover {
+  background: var(--background-modifier-hover);
+}
