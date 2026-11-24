@@ -1,4 +1,4 @@
-# VaultLens AI Context & PII Shield
+# VaultLens Context Shield
 
 **Privacy-first AI context bundler, live wikilink token & cost meter, and reversible PII/secret vault for Obsidian (Desktop & Mobile).**
 

@@ -3,7 +3,7 @@
   "name": "VaultLens Context Shield",
   "version": "1.0.0",
   "minAppVersion": "1.5.0",
-  "description": "Measure note and wikilink token costs, bundle linked Markdown context with local PII redaction, and audit vault health offline",
+  "description": "Measure note and wikilink token costs, bundle linked Markdown context with local PII redaction, and audit vault health offline.",
   "author": "peco",
   "authorUrl": "https://github.com/pecopeko",
   "fundingUrl": "https://github.com/sponsors/pecopeko",
