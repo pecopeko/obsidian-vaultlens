@@ -2233,8 +2233,8 @@ var __vaultlensModules = {
     const DEFAULT_PUBLIC_KEY_JWK = Object.freeze({
       kty: "EC",
       crv: "P-256",
-      x: "3aHDBzq8ZRWHxRayao4XlaUudEb7gjTIbv-tDGP69s4",
-      y: "qyPtq_3bJa0NB0xhk6UUwtEennfklYgzmE5_IDZP-oM",
+      x: "WyFZ0WwbDmPE_b3mv7sG1CapyRXIWcud2MKfqznhyC8",
+      y: "yKfrROHfuwM7DVhqU8lBna83Fu3o8JeuC_T_hCm0eps",
     });
 
     const B64URL_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";

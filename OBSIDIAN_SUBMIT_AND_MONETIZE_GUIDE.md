@@ -17,34 +17,35 @@ You can immediately share the BRAT install link on r/ObsidianMD, Obsidian Forum 
 
 ---
 
-## Step 2: Open the 1-Line PR to `obsidianmd/obsidian-releases` (`$0.00` Official Directory)
+## Step 2: Submit to the Official Obsidian Community Directory (`$0.00`)
 
 Getting listed in Obsidian's built-in **Community Plugins** browser costs **$0.00** and exposes your plugin to millions of Obsidian Desktop & Mobile users.
 
+> **2026 Platform Note**: `obsidianmd/obsidian-releases` now mirrors `https://community.obsidian.md/assets/community-plugins.json` hourly via GitHub Actions (`.github/workflows/mirror-community-json.yml`), and new plugin submissions go through the **[Obsidian Community Developer Dashboard](https://community.obsidian.md)** rather than manual GitHub PRs on `obsidian-releases`.
+
 ### Pre-Submission Checklist (Already Verified in `1.0.0`)
-- [x] `manifest.json` uses valid `id` (`"vaultlens-ai-context"`), `version` (`"1.0.0"`), `minAppVersion` (`"1.5.0"`), `isDesktopOnly: false`, and `description` <= 250 chars with no trailing period or "Obsidian" redundancy.
+- [x] `manifest.json` uses valid `id` (`"vaultlens-ai-context"`), `version` (`"1.0.0"`), `minAppVersion` (`"1.5.0"`), `author` (`"peco"`), `isDesktopOnly: false`, and `description` <= 250 chars with no trailing period or "Obsidian" redundancy.
 - [x] `versions.json` exists at repo root with `{"1.0.0": "1.5.0"}`.
 - [x] GitHub Release tag is **`1.0.0`** (NO leading `v`) with exact 3 assets attached: `main.js`, `manifest.json`, `styles.css`.
 - [x] Zero Node.js built-ins (`fs`, `path`, `crypto`, `Buffer`) and zero `innerHTML` usage inside `main.js` (100% iOS/Android mobile-safe).
 - [x] `LICENSE` (MIT) and clear `README.md` at repo root.
 - [x] All settings headings use `new Setting(containerEl).setName(...).setHeading()` and sentence case.
 
-### Submit the PR (2 Minutes)
-1. Fork **`https://github.com/obsidianmd/obsidian-releases`**.
-2. Edit **`community-plugins.json`** and append this exact JSON object at the **very end** of the array (keeping valid trailing commas):
+### Submit via Obsidian Community Developer Dashboard (2 Minutes)
+1. Sign in to **`https://community.obsidian.md`** with your Obsidian account and connect your GitHub account (`pecopeko`).
+2. Open **Developer Dashboard -> Plugins -> New plugin**.
+3. Enter repository URL: **`https://github.com/pecopeko/obsidian-vaultlens`** (`author: "peco"`, `id: "vaultlens-ai-context"`).
+4. Agree to Developer Policies and click **Submit** — automated validation checks your `manifest.json`, `versions.json`, Release `1.0.0` assets, and mobile-safe `main.js` bundle, and once approved the hourly mirror publishes this entry to `community-plugins.json`:
 
 ```json
   {
     "id": "vaultlens-ai-context",
     "name": "VaultLens AI Context & PII Shield",
-    "author": "pecopeko",
+    "author": "peco",
     "description": "Measure note and wikilink token costs, bundle linked Markdown context with local PII redaction, and audit vault health offline",
     "repo": "pecopeko/obsidian-vaultlens"
   }
 ```
-
-3. Open a Pull Request titled **`Add plugin: VaultLens AI Context & PII Shield`** using Obsidian's built-in PR template checklist.
-4. The official `obsidian-releases` validation bot automatically verifies your `manifest.json`, `versions.json`, Release `1.0.0` assets, and code hygiene within minutes!
 
 ---
 
