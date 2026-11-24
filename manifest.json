@@ -1,6 +1,6 @@
 {
   "id": "vaultlens-ai-context",
-  "name": "VaultLens AI Context & PII Shield",
+  "name": "VaultLens Context Shield",
   "version": "1.0.0",
   "minAppVersion": "1.5.0",
   "description": "Measure note and wikilink token costs, bundle linked Markdown context with local PII redaction, and audit vault health offline",
